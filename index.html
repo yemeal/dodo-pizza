@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="important-links">
+        <div class="flexbox">
             <ul class="links-list">
                 <li><a href="#" class="link">Прямой эфир</a></li>
                 <li><a href="#" class="link">Работа в Додо</a></li>
@@ -17,66 +17,70 @@
             </ul>
         </div>
         <header class="site-header">
-            <div class="logo">
-                <img src="placeholder.svg" alt="Логотип Додо Пиццы">
-            </div>
-            <div class="city-choosing">
-                <a class="link" href="#">Доставка пиццы <span style="color: rgb(255, 105, 0);">Новосибирск</span></a>
-                <div>41 мин • 4.74 ★</div>
-            </div>
-            <div class="profile">
-                <a class="link" href="#">Додокоины</a>
-                <button class="button login-button">Войти</button>
+            <div class="flexbox">
+                <div class="logo">
+                    <a href="#"><img width="250px" src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/91/Dodo_Logo.svg/1280px-Dodo_Logo.svg.png" alt="Логотип Додо Пиццы"></a>
+                </div>
+                <div class="city-choosing">
+                    <a class="link" href="#">Доставка пиццы <span class="dodo-orange">Новосибирск</span></a>
+                    <div>41 мин • 4.74 <span style="color: rgb(255, 208, 0)">★</span></div>
+                </div>
+                <div class="profile">
+                    <a class="link" href="#">Додокоины</a>
+                    <button class="button login-button">Войти</button>
+                </div>
             </div>
         </header>
         <nav class="site-navigation">
-            <div class="grid">
+            <div class="flexbox">
                 <ul class="site-navigation-list">
-                    <li>
-                        <a class="link" href="#">Пиццы</a>
-                    </li>
-                        <li><a class="link" href="#">Комбо</a></li>
-                        <li><a class="link" href="#">Римские пиццы</a></li>
-                        <li><a class="link" href="#">Закуски</a></li>
-                        <li><a class="link" href="#">Кофе</a></li>
-                        <li><a class="link" href="#">Напитки</a></li>
-                        <li><a class="link" href="#">Завтраки</a></li>
-                        <li><a class="link" href="#">Десерты</a></li>
-                        <li><span>•</span></li>
-                        <li><a class="link" href="#">Акции</a></li>
+                    <li><a class="link" href="#">Пиццы</a></li>
+                    <li><a class="link" href="#">Комбо</a></li>
+                    <li><a class="link" href="#">Римские пиццы</a></li>
+                    <li><a class="link" href="#">Закуски</a></li>
+                    <li><a class="link" href="#">Кофе</a></li>
+                    <li><a class="link" href="#">Напитки</a></li>
+                    <li><a class="link" href="#">Завтраки</a></li>
+                    <li><a class="link" href="#">Десерты</a></li>
+                    <li><span>•</span></li>
+                    <li><a class="link" href="#">Акции</a></li>
                 </ul>
                 <button class="button cart-button">Корзина</button>
             </div>
         </nav>
         <section class="offers">
-            <div class="offers-container">
-                <a class="offer-link" href="#">
-                    <img src="placeholder.svg" alt="">
-                </a>
-                <a class="offer-link" href="#">
-                    <img src="placeholder.svg" alt="">
-                </a>
-                <a class="offer-link" href="#">
-                    <img src="placeholder.svg" alt="">
-                </a>
-                <a class="offer-link" href="#">
-                    <img src="placeholder.svg" alt="">
-                </a>
-                <a class="offer-link" href="#">
-                    <img src="placeholder.svg" alt="">
-                </a>
+            <div class="flexbox">
+                <ul class='offers-list'>
+                    <li><a class="offer-link" href="#">
+                        <img class="offer-image" src="https://cdn.inappstory.ru/story/bea/kaw/zt5/e76uqigl6nwyg3e7zkvhda0/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAEAQ&v=2011737253" alt="">
+                    </a></li>
+                    <li><a class="offer-link" href="#">
+                        <img class="offer-image" src="https://cdn.inappstory.ru/story/tni/411/3tn/qe5ibubej83xt1twdwfohyc/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAEAQ&v=1479740454" alt="">
+                    </a></li>
+                    <li><a class="offer-link" href="#">
+                        <img class="offer-image" src="https://cdn.inappstory.ru/story/ver/znq/gu1/usyka20oijbiw0puv7bt7ry/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAEAQ&v=4162336677" alt="">
+                    </a></li>
+                    <li><a class="offer-link" href="#">
+                        <img class="offer-image" src="https://cdn.inappstory.ru/story/kal/zp9/g1y/4e5f8orpjqwegxle9rslfmm/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAEAQ&v=2115968678" alt="">
+                    </a></li>
+                    <li><a class="offer-link" href="#">
+                        <img class="offer-image" src="https://cdn.inappstory.ru/story/odn/lrh/ovw/kr83v1dthf6dzsfszcungrz/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAEAQ&v=829573105" alt="">
+                    </a></li>
+                </ul>
             </div>
         </section>
         <section class="frequent-orders">
-            <h2>Часто заказывают</h2>
-            <div class="frequent-orders-container">
-                <button class="popular-product">
-                    <img src="placeholder.svg" alt="Пепперони фреш">
-                    <span class="popular-product-info">
-                        <span class="popular-product-name">Пепперони фреш</span>
-                        <span class="popular-product-price">от 289 ₽</span>
-                    </span>
-                </button>
+            <div class="flexbox"><h2>Часто заказывают</h2></div>
+            <div class="flexbox">
+                <div class="frequent-orders-container">
+                    <button class="popular-product">
+                        <img src="placeholder.svg" alt="Пепперони фреш">
+                        <span class="popular-product-info">
+                            <span class="popular-product-name">Пепперони фреш</span>
+                            <span class="popular-product-price">от 289 ₽</span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </section>
         <main class="menu">
