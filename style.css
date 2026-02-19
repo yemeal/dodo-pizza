@@ -47,10 +47,12 @@ body {
     background-color: rgb(255, 105, 0);
     color: rgb(255, 255, 255);
 }
-
 .cart-button:hover {
     background-color: rgb(232, 97, 0);
     
+}
+.cart-button:active {
+    color: rgb(255, 165, 102);
 }
 
 
@@ -87,7 +89,7 @@ body {
     width: 197px;
     height: 248px;
     border-radius: 10%;
-    transition: all 0.25s;
+    transition: transform 0.25s;
 }
 
 .offer-link .offer-image:hover {
