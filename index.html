@@ -6,15 +6,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="flexbox">
-            <ul class="links-list">
-                <li><a href="#" class="link">Прямой эфир</a></li>
-                <li><a href="#" class="link">Работа в Додо</a></li>
-                <li><a href="#" class="link">О нас</a></li>
-                <li><a href="#" class="link">Контакты</a></li>
-                <li><a href="#" class="link">Коропоративные заказы</a></li>
-                <li><a href="#" class="link">Сертификаты для бизнеса</a></li>
-            </ul>
+        <div class="top-bar">
+            <div class="flexbox important-links">
+                <ul class="links-list">
+                    <li><a href="#" class="link"><span class="dodo-orange">●</span> Прямой эфир</a></li>
+                    <li><a href="#" class="link">Работа в Додо</a></li>
+                    <li><a href="#" class="link">О нас</a></li>
+                    <li><a href="#" class="link">Контакты</a></li>
+                    <li><a href="#" class="link">Коропоративные заказы</a></li>
+                    <li><a href="#" class="link">Сертификаты для бизнеса</a></li>
+                </ul>
+            </div>
         </div>
         <header class="site-header">
             <div class="flexbox">
@@ -72,15 +74,27 @@
         <section class="frequent-orders">
             <div class="flexbox"><h2>Часто заказывают</h2></div>
             <div class="flexbox">
-                <div class="frequent-orders-container">
-                    <button class="popular-product">
-                        <img src="placeholder.svg" alt="Пепперони фреш">
-                        <span class="popular-product-info">
-                            <span class="popular-product-name">Пепперони фреш</span>
-                            <span class="popular-product-price">от 289 ₽</span>
-                        </span>
-                    </button>
-                </div>
+                <button class="popular-product-button">
+                    <div class="popular-product-image"><img class="product-image-picture" src="https://media.dodostatic.net/image/r:292x292/0198bf57bc517218ab93c762f4b0193e.jpg" alt="Пепперони фреш"></div>
+                    <span class="popular-product-info">
+                        <span class="popular-product-name">Пепперони фреш</span>
+                        <span class="popular-product-price">от 289 ₽</span>
+                    </span>
+                </button>
+                <button class="popular-product-button">
+                    <div class="popular-product-image"><img class="product-image-picture" src="https://media.dodostatic.net/image/r:292x292/0195f0ff3ee0726a8389bda7e4d9062a.jpg" alt="3 пиццы"></div>
+                    <span class="popular-product-info">
+                        <span class="popular-product-name">3 пиццы 30 см</span>
+                        <span class="popular-product-price">1599 ₽</span>
+                    </span>
+                </button>
+                <button class="popular-product-button">
+                    <div class="popular-product-image"><img class="product-image-picture" src="https://media.dodostatic.net/image/r:292x292/0197f86b435777ec822337a4289ccee7.jpg" alt="2 соуса"></div>
+                    <span class="popular-product-info">
+                        <span class="popular-product-name">2 соуса</span>
+                        <span class="popular-product-price">75 ₽</span>
+                    </span>
+                </button>
             </div>
         </section>
         <main class="menu">
@@ -115,7 +129,7 @@
             </article>
         </section>
         <footer class="site-footer">
-            Пока лень
+            подвал делать было лень, представим, что он здесь есть
         </footer>
     </body>
 </html>

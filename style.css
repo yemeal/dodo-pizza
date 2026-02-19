@@ -60,15 +60,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     max-width: 1105px; /* Максимальная ширина контента */
     margin: 0 auto;    /* Центрируем блок: 0 сверху/снизу, auto слева/справа */
     padding: 0 20px;   /* Внутренние отступы, чтобы на мобилках текст не лип к экрану */
     width: 100%;       /* Чтобы блок занимал всю доступную ширину, но не больше max-width */
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.site-header > .flexbox {
+.site-header > .flexbox,
+.frequent-orders > .flexbox {
     justify-content: flex-start;
 }
 
@@ -84,6 +86,10 @@ body {
 }
 
 
+.top-bar {
+    border-bottom: 1px solid rgb(226, 226, 233);
+    padding-bottom: 20px;
+}
 
 .offer-link .offer-image {
     width: 197px;
@@ -101,4 +107,80 @@ body {
 
 .logo {
     width: 300px
+}
+
+
+.popular-product-image {
+    display: block;
+    width: 80px;
+    height: 80px;
+    flex: 0 0 auto; 
+}   
+
+.product-image-picture {
+    width: 100%;
+    height: auto;
+    display: block;
+    user-select: none;
+}
+
+.popular-product-button {
+    display: flex;         
+    align-items: center;   
+    padding: 16px;
+    width: 260px;
+    min-height: 100px;     
+    margin-right: 24px;
+    border-radius: 12px;
+    border: none;
+    background: white;
+    transition: box-shadow 150ms ease-out;
+    box-shadow: rgba(6, 5, 50, 0.15) 0px 4px 22px -6px;
+    cursor: pointer;
+    font: inherit;
+}
+
+.popular-product-button:hover {
+    box-shadow: rgba(6, 5, 50, 0.15) 0px 0px 12px -4px;
+}
+
+.popular-product-button:active {
+    box-shadow: rgba(6, 5, 50, 0.15) 0px 0px 0px 0px;
+}
+
+.popular-product-info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: 12px; 
+    text-align: left;
+    font: inherit;
+}
+
+.popular-product-name {
+    margin-bottom: 4px; 
+    font: inherit;
+}
+
+.popular-product-price {
+    font: inherit;
+    color: rgb(92, 99, 112); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.site-footer {
+    background-color: rgb(24, 24, 24);
+    height: 640px;
+    color: white;
 }
