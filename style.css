@@ -4,8 +4,12 @@
     box-sizing: border-box; 
 }
 
+.dodo-orange {
+    color: rgb(255, 105, 0);
+}
+
 body {
-    font: 500 14px / 18px Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font: 500 16px / 18px Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #000;
 }
 
@@ -17,4 +21,82 @@ body {
 
 .link:hover {
     color: rgb(255, 105, 0);
+}
+
+.button {
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: all 0.35s;
+    font: inherit;
+}
+
+.login-button {
+    background-color: rgb(243, 243, 247);
+    color: rgb(0, 0, 0);
+}
+
+.login-button:hover {
+    background-color: rgb(226, 226, 233);
+}
+
+.cart-button {
+    height: 40px;
+    width: 120px;
+    background-color: rgb(255, 105, 0);
+    color: rgb(255, 255, 255);
+}
+
+.cart-button:hover {
+    background-color: rgb(232, 97, 0);
+    
+}
+
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 1105px; /* Максимальная ширина контента */
+    margin: 0 auto;    /* Центрируем блок: 0 сверху/снизу, auto слева/справа */
+    padding: 0 20px;   /* Внутренние отступы, чтобы на мобилках текст не лип к экрану */
+    width: 100%;       /* Чтобы блок занимал всю доступную ширину, но не больше max-width */
+    margin-bottom: 20px;
+}
+
+.site-header > .flexbox {
+    justify-content: flex-start;
+}
+
+.flexbox > .profile {
+    margin-left: auto;
+}
+
+.site-navigation-list, .links-list, .offers-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+.offer-link .offer-image {
+    width: 197px;
+    height: 248px;
+    border-radius: 10%;
+    transition: all 0.25s;
+}
+
+.offer-link .offer-image:hover {
+    transform: scale(1.05);
+}
+.offer-link .offer-image:active {
+    transform: scale(0.95);
+}
+
+.logo {
+    width: 300px
 }
