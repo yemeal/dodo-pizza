@@ -233,14 +233,12 @@ body {
     justify-content: space-between;
     
     max-width: 1105px; /* Максимальная ширина контента */
-    margin: 0 auto;    /* Центрируем блок: 0 сверху/снизу, auto слева/справа */
+    margin: 40px auto;    /* Центрируем блок: 0 сверху/снизу, auto слева/справа */
     padding: 0 20px;   /* Внутренние отступы, чтобы на мобилках текст не лип к экрану */
     width: 100%;       /* Чтобы блок занимал всю доступную ширину, но не больше max-width */
-    margin-top: 20px;
     grid-template-columns: 220px 220px 220px 220px;
     gap: 40px;
 }
-
 
 
 
