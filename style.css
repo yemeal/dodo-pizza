@@ -241,9 +241,60 @@ body {
 }
 
 
+.delivery-info > .flexbox {
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.delivery-zone-button {
+    position: relative;
+    width: 384px;
+    height: 395px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+.delivery-zone-button span {
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.delivery-title {
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+.delivery-zone-button-image {
+    width: 100%;
+    transition: transform 2s ease-in-out;
+}
+.delivery-zone-button:hover .delivery-zone-button-image {
+    transform: scale(1.5);
+
+}
+
+.delivery-info p,
+.delivery-info button
+{
+    margin-bottom: 20px;
+}
 .site-footer {
+    display: flex;
     background-color: rgb(24, 24, 24);
     height: 640px;
     color: white;
+    align-items: center;
+    padding-left: 45% ;
 }
