@@ -33,6 +33,7 @@
                 </div>
             </div>
         </header>
+        <div class="header-anchor"></div>
         <nav class="site-navigation">
             <div class="flexbox">
                 <ul class="site-navigation-list">
@@ -223,5 +224,19 @@
         <footer class="site-footer">
             подвал делать было лень, представим, что он здесь есть
         </footer>
+        <script>
+            const nav = document.querySelector('.site-navigation');
+            const anchor = document.querySelector('.header-anchor');
+
+            const observer = new IntersectionObserver((entries) => {
+                if (!entries[0].isIntersecting) {
+                    nav.classList.add('is-pinned'); 
+                } else {
+                    nav.classList.remove('is-pinned'); 
+                }
+            }, { threshold: [0] });
+
+            observer.observe(anchor);
+        </script>
     </body>
 </html>
